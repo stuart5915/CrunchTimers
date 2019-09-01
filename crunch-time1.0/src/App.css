@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media screen and (orientation: landscape) {
+  .mainDivAdjust {
+    display: inline-flex;
+  }
+}
+
+@media only screen and (min-height: 750px) {
+  .mainDivAdjust h1 {
+    padding-top: 30px;
+  }
+  .mainDivAdjust {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-height: 720px) {
+  .mainDivAdjust h1 {
+    padding-top: 10px;
+  }
+  .mainDivAdjust {
+    padding-top: 0;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .mainDivAdjust h1 {
+    font-size: 50px;
+  }
+}
+
+.mainDivAdjust {
+  padding-top: 40px;
+}
+
+.xIntroduction,
+.xCooldown {
+  background-color: #9fbefd;
+}
+
+.xDemonstration {
+  background-color: #0d44db;
+}
+
+.xWarm-up {
+  background-color: rgb(253, 137, 29);
+}
+
+.xTransition {
+  background-color: rgb(77, 153, 77);
+}
+.xStation1-Rest1,
+.xStation1-Rest2,
+.xStation1-Transition1,
+.xStation2-Rest1,
+.xStation2-Rest2,
+.xStation2-Transition2,
+.xStation3-Rest1,
+.xStation3-Rest2,
+.xStation3-Transition3,
+.xStation4-Rest1,
+.xStation4-Rest2,
+.xStation4-Transition4,
+.xStation5-Rest1,
+.xStation5-Rest2,
+.xStation5-Transition5,
+.xStation6-Rest1,
+.xStation6-Rest2,
+.xStation6-Transition6 {
+  background-color: rgb(15, 255, 127);
+}
+
+.xStation1-Round1,
+.xStation1-Round2,
+.xStation1-Round3,
+.xStation2-Round1,
+.xStation2-Round2,
+.xStation2-Round3,
+.xStation3-Round1,
+.xStation3-Round2,
+.xStation3-Round3,
+.xStation4-Round1,
+.xStation4-Round2,
+.xStation4-Round3,
+.xStation5-Round1,
+.xStation5-Round2,
+.xStation5-Round3,
+.xStation6-Round1,
+.xStation6-Round2,
+.xStation6-Round3 {
+  background-color: rgb(248, 61, 61);
+}
+
+.Countdown-time {
+  font-size: 45vw;
+}
+
+@media only screen and (min-width: 750px) {
+  .Countdown-time {
+    font-size: 40vw;
+  }
+}
+
+.helpBox {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.918);
+  height: 80vh;
+  width: 80vw;
+  left: 10%;
+  top: 10%;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 5px 15px rgb(0, 0, 0);
+  border-top: 3px solid rgb(242, 168, 61);
+  border-radius: 40px;
+}
+
+.helpBoxP {
+  margin-top: 10px;
+  overflow: scroll;
+  height: 80%;
+  margin: 0 5px;
+  display: block;
+}
+
+.helpBoxP p,
+h3 {
+  margin-top: 3px;
+}
+
+.helpBox button {
+  bottom: 10px;
+  background-color: Transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.navMenu button {
+  width: 20%;
+  height: 8vh;
+  outline: none;
+  background-color: Transparent;
+  color: white;
+  border-top: 2px solid white;
+}
+
+.mainMenuButtonOn {
+  width: 20%;
+  height: 8vh;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  border: none;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  position: absolute;
+  top: 92vh;
+}
+
+.mainMenuButtonOn img {
+  width: 20%;
+}
+
+.mainMenuButtonOff {
+  display: none;
+}
+
+.mainMenuButtonOff img {
+  display: none;
+}
+
+.displayNone {
+  display: none;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.navMenu {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#crunchLogo {
+  width: 20%;
+  height: 90%;
+}
+
+.navMenu img {
+  width: 20%;
+}
+
+#mainButton {
+  background: url("/src/imgs/mainMenu.png");
+  background-size: 100%;
+}
+
+.leftButtonsNav {
+  border-right: 2px solid rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.mainMenuOn {
+  display: block;
+}
+
+.mainMenuOff {
+  display: none;
+}
+
+.strongHiitOff {
+  display: none;
+}
+
+.strongHiitOn {
+  display: block;
+}
+
+.rightButtonsNav {
+  border-right: none;
+  border-top: none;
+  border-left: 2px solid rgb(255, 255, 255);
+  border-bottom: none;
+}
+
+.middleButtonsNav {
+  border-right: none;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-left: none;
+  border-bottom: none;
+}
+
+.leftButton {
+  float: left;
+}
+
+.rightButton {
+  float: right;
+}
+
+@media screen and (orientation: landscape) {
+  .Countdown-time {
+    font-size: 20vw;
+  }
+}
+
+.prevDiv {
+  height: 20vh;
+  background-image: url(./imgs/hiitzone.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.mainDiv {
+  height: 52vh;
+  color: white;
+}
+
+.nextDiv {
+  height: 20vh;
+}
+
+.prevButton {
+  border: none;
+  outline: none;
+  background-color: Transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 20vh;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.nextButton {
+  border: none;
+  outline: none;
+  background-color: Transparent;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 20vh;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+}
+
+.returnToSelection {
+  border: none;
+  outline: none;
+  position: fixed;
+  left: 0;
+  height: 60px;
+  width: 60px;
+  background: url(./imgs/backarrow.png);
+  background-size: 100%;
+}
+
+.introBg {
+  height: 100%;
+  margin: 0 20%;
+}
+
+.introBgChild {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.introBgChild img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (orientation: landscape) {
+  .prevDiv {
+    width: 90vw;
+  }
+}
+
+.introBgChild2 {
+  justify-content: center;
+  display: flex;
+  height: 50%;
+  align-items: flex-start;
+}
+
+.introBgChild2 p {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  font-size: 6vw;
+}
+
+@media screen and (orientation: landscape) {
+  .introBgChild2 p {
+    font-size: 4vw;
+  }
+}
+
+.lockedTrue {
+  position: absolute;
+  height: 92vh;
+  width: 100vw;
+}
+
+.lockedTrueBottom {
+  position: absolute;
+  height: 100vh;
+  width: 80%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
